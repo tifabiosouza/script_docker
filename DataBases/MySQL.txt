@@ -1,0 +1,1 @@
+docker run --name meubanco -e MYSQL_ROOT_PASSWORD=12345678 -p 3306:3306 -v ~/Desktop/apagar:/var/lib/mysql -d mysql:latest
