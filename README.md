@@ -1,50 +1,49 @@
-Comandos básicos do docker:
+# Comandos básicos do docker:
 
-- Docker Compose:
-  -   docker-compuse up -d --build
-  -   docker-compose -f <docker-compose-file-name> -p <project-name> up -d --build
+### Docker Compose:
+Exemplos:
+-   docker-compuse up -d --build
+-   docker-compose -f <docker-compose-file-name> -p <project-name> up -d --build
 
-Help https://docs.docker.com/compose/reference/#command-options-overview-and-help:
-Usage:  docker compose [OPTIONS] COMMAND
+[Help](https://docs.docker.com/compose/reference/#command-options-overview-and-help):
 
-Define and run multi-container applications with Docker.
+Forma de Usar o comando ````docker compose [OPTIONS]````
 
-Options:
-      --ansi string                Control when to print ANSI control characters ("never"|"always"|"auto") (default "auto")
-      --compatibility              Run compose in backward compatibility mode
-      --env-file stringArray       Specify an alternate environment file.
-  -f, --file stringArray           Compose configuration files
-      --parallel int               Control max parallelism, -1 for unlimited (default -1)
-      --profile stringArray        Specify a profile to enable
-      --project-directory string   Specify an alternate working directory
-                                   (default: the path of the, first specified, Compose file)
-  -p, --project-name string        Project name
+````
+Opções:
+      --ansi string                Controlar quando imprimir caracteres de controle ANSI ("nunca"|"sempre"|"auto") (padrão "auto")
+      --compatibility              Execute compose em modo de compatibilidade com versões anteriores
+      --env-file stringArray       Especifique um arquivo de ambiente alternativo.
+  -f, --file stringArray           Arquivos de configuração composer
+      --parallel int               Controle o paralelismo máximo, -1 para ilimitado (padrão -1)
+      --profile stringArray        Especifique um profile para ativar
+      --project-directory string   Especifique um diretório (nome do grupo que aparece no docker desktop) de trabalho alternativo (padrão: pasta raíz onde o arquivo se encontra)
+  -p, --project-name string        Nome do Projeto
 
-Commands:
-  build       Build or rebuild services
-  config      Parse, resolve and render compose file in canonical format
-  cp          Copy files/folders between a service container and the local filesystem
-  create      Creates containers for a service.
-  down        Stop and remove containers, networks
-  events      Receive real time events from containers.
-  exec        Execute a command in a running container.
-  images      List images used by the created containers
-  kill        Force stop service containers.
-  logs        View output from containers
-  ls          List running compose projects
-  pause       Pause services
-  port        Print the public port for a port binding.
-  ps          List containers
-  pull        Pull service images
-  push        Push service images
-  restart     Restart service containers
-  rm          Removes stopped service containers
-  run         Run a one-off command on a service.
-  start       Start services
-  stop        Stop services
-  top         Display the running processes
-  unpause     Unpause services
-  up          Create and start containers
-  version     Show the Docker Compose version information
-
-Run 'docker compose COMMAND --help' for more information on a command.
+Comandos:
+  build       Construir ou reconstruir serviços
+  config      Analisar, resolver e renderizar arquivo de composição em formato canônico
+  cp          Copie arquivos/pastas entre um contêiner de serviço e o sistema de arquivos local
+  create      Cria contêineres para um serviço.
+  down        Pare e remova contêineres, redes
+  events      Receba eventos em tempo real de contêineres.
+  exec        Execute um comando em um contêiner em execução.
+  images      Listar imagens usadas pelos contêineres criados
+  kill        Forçar a parada de contêineres de serviço.
+  logs        Ver a saída dos contêineres
+  ls          Listar projetos de composição em execução
+  pause       Pausar serviços
+  port        Imprima a porta pública para uma ligação de porta.
+  ps          Listar contêineres
+  pull        Baixa imagens
+  push        Envia imagens
+  restart     Reinicia os serviços
+  rm          Remove e para os serviços
+  run         Execute um comando único em um serviço.
+  start       Inicia serviços
+  stop        Para serviços
+  top         Mostra os processos em execução
+  unpause     Retoma serviços
+  up          Cria e inicia containers
+  version     Mostra informação da vesrsão do Docker Compose
+````
